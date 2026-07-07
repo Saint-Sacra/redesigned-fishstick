@@ -2,7 +2,7 @@ changeTo = "sand";
 
 document.addEventListener("keydown", function(e) { //change prompt listener
 	// r = changeElementPrompt()
-	if (e.keyCode == 85) {
+	if (e.code == "ü") {
 		e.preventDefault();
 		changeElementPrompt();
 	}
@@ -22,9 +22,9 @@ function changeElementPrompt() {
 }
 
 function updateChangeDescriptions() {
-	elements.change.desc = "Changes any pixels it is used on to a specified type.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [u] or click here</span> to open the change prompt.";
-	elements.alt_change.desc = "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [u] or click here</span> to open the change prompt.";
-	elements.alt_alt_change.desc = "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties except for color.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [u] or click here</span> to open the change prompt.";
+	elements.change.desc = "Changes any pixels it is used on to a specified type.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [ü] or click here</span> to open the change prompt.";
+	elements.alt_change.desc = "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [ü] or click here</span> to open the change prompt.";
+	elements.alt_alt_change.desc = "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties except for color.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [ü] or click here</span> to open the change prompt.";
 };
 
 elements.change = {
@@ -33,7 +33,7 @@ elements.change = {
 		changePixel(pixel,changeTo,true);
     },
     category: "edit",
-	desc: "Changes any pixels it is used on to a specified type.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [u] or click here</span> to open the change prompt.",
+	desc: "Changes any pixels it is used on to a specified type.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [ü] or click here</span> to open the change prompt.",
 };
 
 elements.alt_change = {
@@ -42,7 +42,7 @@ elements.alt_change = {
 		pixel.element = changeTo;
     },
     category: "edit",
-	desc: "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [u] or click here</span> to open the change prompt.",
+	desc: "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [ü] or click here</span> to open the change prompt.",
 	hidden: true,
 };
 
@@ -53,6 +53,6 @@ elements.alt_alt_change = {
 		pixel.color = pixelColorPick(pixel);
     },
     category: "edit",
-	desc: "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties except for color.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [u] or click here</span> to open the change prompt.",
+	desc: "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties except for color.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [ü] or click here</span> to open the change prompt.",
 	hidden: true,
 };
