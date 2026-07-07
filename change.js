@@ -42,7 +42,7 @@ elements.alt_change = {
 		pixel.element = changeTo;
     },
     category: "edit",
-	desc: "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ffff0ff;\";>Press [ü] or click here</span> to open the change prompt.",
+	desc: "Changes any pixels it is used on to a specified type, but keeping their non-element-based properties.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ffffff;\";>Press [ü] or click here</span> to open the change prompt.",
 	hidden: true,
 };
 
