@@ -9,7 +9,7 @@ document.addEventListener("keydown", function(e) { //change prompt listener
 });
 
 function changeElementPrompt() {
-	var cmToElement = prompt("Enter what you want to change pixels to");
+	var cmToElement = promptText("Enter what you want to change pixels to");
 	// replace spaces with underscores
 	cmToElement = cmToElement.replace(/ /g, "_");
 	cmToElementS = mostSimilarElement(cmToElement);
