@@ -2,7 +2,7 @@ changeTo = "sand";
 
 document.addEventListener("keydown", function(e) { //change prompt listener
 	// r = changeElementPrompt()
-	if (e.keyCode == 186) {
+	if (e.keyCode == 89) {
 		e.preventDefault();
 		changeElementPrompt();
 	}
