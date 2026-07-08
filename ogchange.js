@@ -33,7 +33,7 @@ elements.change = {
 		changePixel(pixel,changeTo,true);
     },
     category: "edit",
-	desc: "Changes any pixels it is used on to a specified type.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ff00ff;\";>Press [;] or click here</span> to open the change prompt.",
+	desc: "Changes any pixels it is used on to a specified type.<br/>Currently replacing pixels with \"" + changeTo + "\".<br/><span onclick=changeElementPrompt() style=\"color: #ffffff;\";>Press [;] or click here</span> to open the change prompt.",
 };
 
 elements.alt_change = {
